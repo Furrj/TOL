@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yesod</title>
+    <%- include('../partials/bootHeader') %>
+    <link rel="stylesheet" href="/styles/app.css">
+</head>
+<body>
+    <div class="row my-5">
+        <div class="col-6 offset-3">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title" style="font-size: 60px;">Yesod</h1>
+                </div>
+                <ul class="list-group list-group-flush sephText">
+                    <li class="list-group-item">Translation: <%= yesod.translation %></li>
+                    <li class="list-group-item">Attribution: <%= yesod.attributions %> </li>
+                    <li class="list-group-item">
+                        <p>King Scale: <%= yesod.color_king %></p><hr>
+                        <p>Queen Scale:</p><hr>
+                        <p>Emperor Scale:</p><hr>
+                        <p>Empress Scale:</p>
+                    </li>
+                  </ul>
+            </div>
+        </div>
+    </div>
+
+    <%- include('../partials/bootJS') %>
+</body>
+</html>
